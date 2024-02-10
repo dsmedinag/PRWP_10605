@@ -6,7 +6,7 @@ Free access: [http://hdl.handle.net/10986/40639]
 
 The code in this replication package constructs the analysis file from the Great Integrated Household Survey (GEIH, Spanish acronyms) using Stata 15. The do-files run all of the code to generate the data for figures 1 to 34 and tables 2 to 5 in the paper. The replicator should expect the code to run for about 4 hours.
 
-All data used in this work are publicly available through the web pages of the entities that hold the information.
+All data used in this work are publicly available through the web pages of the entities that hold the information. Our main source is the Departamento Administrativo Nacional de Estadística-DANE: [www.dane.gov.co]. Terms and conditions of use: [https://www.dane.gov.co/index.php/servicios-al-ciudadano/tramites/ayudas-de-navegabilidad/politica-de-uso]
 
 Because our work requires comparing results over time from 2015 to 2021 and using information from the Mission for the Splicing of the Employment, Poverty, and Inequality Series (MESEP) as a source for labor income variables, we use the 2005 frame GEIH data between 2015 and 2021. 
 
