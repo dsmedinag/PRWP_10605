@@ -4,7 +4,7 @@
 
 Free access: [http://hdl.handle.net/10986/40639]
 
-The code in this replication package constructs the analysis file from the Great Integrated Household Survey (GEIH, Spanish acronyms) using Stata 15. The do-files run all of the code to generate the data for figures 1 to 34 and tables 2 to 5 in the paper. The replicator should expect the code to run for about 4 hours.
+The code in this replication package constructs the analysis file from the Great Integrated Household Survey (GEIH, Spanish acronyms) using Stata 15. The do-files run all of the code to generate the data for figures 1 to 34 and tables 2 to 5 in the paper. Approximate time needed to reproduce the analyses on a standard 2021 desktop machine: 3-5 hours.
 
 All data used in this work are publicly available through the web pages of the entities that hold the information. Our main source is the Departamento Administrativo Nacional de Estadística-DANE: [www.dane.gov.co]. Terms and conditions of use: [https://www.dane.gov.co/index.php/servicios-al-ciudadano/tramites/ayudas-de-navegabilidad/politica-de-uso]
 
