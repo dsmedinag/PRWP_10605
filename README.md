@@ -11,3 +11,8 @@ Because our work requires comparing results over time from 2015 to 2021 and usin
 The full dataset and documentation of GEIH can be downloaded from [https://microdatos.dane.gov.co/index.php/catalog/MERCLAB-Microdatos]. We obtain the GEIH microdata for each year from the 'Mercado Laboral' collection. For example, to download the year 2015, the label with which the information is identified is 'Gran Encuesta Integrada de Hogares - GEIH - 2015'. 
 
 In the same repository, you can find the full dataset and documentation of 'Medición de Pobreza Monetaria y Desigualdad' from the Mission for the Splicing of the Employment, Poverty, and Inequality Series (MESEP). It can be downloaded from [https://microdatos.dane.gov.co/index.php/catalog/POBCONVID]. We obtain the microdata for each year from the 'Pobreza y Condiciones de Vida' collection. For example, to download the year 2015, the label with which the information is identified is 'Medición de Pobreza Monetaria y Desigualdad - 2015'.
+
+The consumer price index used to deflate income variables is downloaded from the Banco de la República website [https://www.banrep.gov.co/es/estadisticas/indice-precios-consumidor-ipc].
+
+The information on vacancies corresponds to the 'ofertas laborales' reported by the Public Employment Service (SPE, Spanish acronyms) in the Labor Demand Statistical Annex [https://www.serviciodeempleo.gov.co/dataempleo-spe/demanda-laboral/2022/prueba].
+
