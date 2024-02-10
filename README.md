@@ -16,3 +16,4 @@ The consumer price index used to deflate income variables is downloaded from the
 
 The information on vacancies corresponds to the 'ofertas laborales' reported by the Public Employment Service (SPE, Spanish acronyms) in the Labor Demand Statistical Annex [https://www.serviciodeempleo.gov.co/dataempleo-spe/demanda-laboral/2022/prueba].
 
+Finally, the names and codes of departments and municipalities are obtained from the 'Datos Abiertos' page of the Ministry of ICTs [https://www.datos.gov.co/Mapas-Nacionales/Departamentos-y-municipios-de-Colombia/xdk5-pm3f/about_data].
