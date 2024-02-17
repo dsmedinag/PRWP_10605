@@ -21,7 +21,7 @@ The information on vacancies corresponds to the 'ofertas laborales' reported by 
 Finally, the names and codes of departments and municipalities are obtained from the 'Datos Abiertos' page of the Ministry of ICTs [https://www.datos.gov.co/Mapas-Nacionales/Departamentos-y-municipios-de-Colombia/xdk5-pm3f/about_data].
 
 # Do-files description
-We used 9 codes to obtain the results of the paper:
+We used nine codes to obtain the results of the paper:
 
 - 0_run_dofiles: this is the master code that runs all do-files to generate the panel, descriptive plots, and estimates in both tables and graphs.
 - 1_create_annual_files: transforms the raw files downloaded from DANE into annualized files for panel construction.
@@ -33,3 +33,7 @@ We used 9 codes to obtain the results of the paper:
 - 7_set_data_est: Creates some key variables and labels for the income gap estimation models.
 - 8_tables_3_5: Generates the estimates of the decomposition methods used and exports data to tables 3-5 and figures 33-34. These are then organized in Excel.
 - 9_graphs_21_32: Generates the estimates of the probabilistic model and generates result graphs 21-32.
+
+# Disclaimer
+
+We cannot guarantee that the results are 100% reproducible. We have high confidence in the replicability of 2015-2019 and 2021. However, 2020 was a complex year in terms of data collection for the COVID-19 emergency, which caused constant changes in the information reported by el DANE. The information we used for most years was downloaded in the first half of 2022. In the case of 2020, the last information was downloaded on February 15, 2023. 
