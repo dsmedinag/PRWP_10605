@@ -1,6 +1,6 @@
 # Reproducibility packages of Policy Research Working Paper-10605: 
 
-'How Have Gender Gaps in the Colombian Labor Market Changed during the Economic Recovery?' by Dávalos, María E; Londoño, Diana; Medina, Daniel.
+'How Have Gender Gaps in the Colombian Labor Market Changed during the Economic Recovery?' by Dávalos, María E; Londoño, Diana; Medina-Gaspar, Daniel.
 
 Free access: [http://hdl.handle.net/10986/40639]
 
