@@ -36,4 +36,6 @@ We used nine codes to obtain the results of the paper:
 
 # Disclaimer
 
-We cannot guarantee that the results are 100% reproducible. We have high confidence in the replicability of 2015-2019 and 2021. However, 2020 was a complex year in terms of data collection for the COVID-19 emergency, which caused constant changes in the information reported by el DANE. The information we used for most years was downloaded in the first half of 2022. In the case of 2020, the last information was downloaded on February 15, 2023. 
+We cannot guarantee that the results are 100% reproducible. We have high confidence in the replicability of 2015-2019 and 2021. However, 2020 was a complex year in terms of data collection, which led to constant changes in the information reported. In addition, through 2022, DANE changed the framework of the survey expansion factors, which also generated constant changes in data reporting.
+
+The information we used for most years was downloaded in the first half of 2022. In the case of 2020, the last information was downloaded on February 15, 2023. 
