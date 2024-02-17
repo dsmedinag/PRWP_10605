@@ -20,7 +20,7 @@ grstyle color p5 "115 115 115" // dark grey
 grstyle anglestyle vertical_tick horizontal
 
 * Directories
-cd "Put here data directory"
+cd "Put here project directory"
 global data "Data"
 global dofiles "Do_files"
 global temp_files "Data\Temps"
