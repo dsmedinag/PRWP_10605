@@ -23,13 +23,13 @@ Finally, the names and codes of departments and municipalities are obtained from
 # Do-files description
 We used 9 codes to obtain the results of the paper:
 
-- 0_run_dofiles: this is the master code that runs all the other do-files that generate the panel, descriptive plots, and estimates in both tables and graphs.
+- 0_run_dofiles: this is the master code that runs all do-files to generate the panel, descriptive plots, and estimates in both tables and graphs.
 - 1_create_annual_files: transforms the raw files downloaded from DANE into annualized files for panel construction.
-- 2_create_panel_all_rawdata: This do-file builds the panel by merging the annual data and matching the information coming from the MESEP data.
-- 3_cod_general_variables_WB: this is a code to create a standard variable used by the World Bank team for employment issues in Colombia.
+- 2_create_panel_all_rawdata: This do-file builds the panel by appending the annual data and matching the MESEP data.
+- 3_cod_general_variables_WB: this is a code to create standard variables used by the World Bank team for employment issues in Colombia.
 - 4_key_variables: constructs key variables for estimation and descriptive exercises.
-- 5_graphs_1_20: Generates the descriptive graphs 1 to 20 of the paper.
-- 6_table_2: Construct the descriptive statistics table number 2 of the paper.
+- 5_graphs_1_20: Generates descriptive graphs 1 to 20 of the paper.
+- 6_table_2: Constructs table 2 for the descriptive statistics in the paper.
 - 7_set_data_est: Creates some key variables and labels for the income gap estimation models.
-- 8_tables_3_5: Generates the estimates of the decomposition methods used and exports the information for tables 3-5 of the paper and figures 33-34. These are then organized in Excel.
-- 9_graphs_21_32: Generates the estimates of the probabilistic model and generates graphs 21 to 32 of the results of these specifications.
+- 8_tables_3_5: Generates the estimates of the decomposition methods used and exports data to tables 3-5 and figures 33-34. These are then organized in Excel.
+- 9_graphs_21_32: Generates the estimates of the probabilistic model and generates result graphs 21-32.
