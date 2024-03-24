@@ -30,8 +30,8 @@ global graphs "Graphs"
 global probit "Data\Probit" 
 
 * Making folders
-capture mkdir "${rawdata}\DANE"
-capture mkdir "${rawdata}\DANE\Annual"
+capture mkdir "${data}/${rawdata}/All"
+capture mkdir "${data}/${rawdata}/Annual"
 
 capture mkdir "$temp_files"
 capture mkdir "$dir_tables"
@@ -42,10 +42,7 @@ capture mkdir "$probit"
 log using "$data/run_all.smcl", replace
 
 display as red "$S_TIME - 1st dofile"
-do "${dofiles}/1_create_anual_files"
-
-display as red "$S_TIME - 2st dofile"
-do "${dofiles}/2_create_panel_all_rawdata"
+do "${dofiles}/2_create_anual_files"
 
 display as red "$S_TIME - 3st dofile"
 do "${dofiles}/3_cod_general_variables_WB"
