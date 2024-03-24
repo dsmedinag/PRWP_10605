@@ -276,4 +276,8 @@ compress
 
 replace area=. if area>76 & area<99
 
+
+sum fex_c_2011 if año==2020
+capture noisily replace fex_c_2011=fex_c if año==2020 & r(N)==0
+
 save "${data}/GEIH_2015_2021", replace
