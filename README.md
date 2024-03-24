@@ -20,12 +20,21 @@ The information on vacancies corresponds to the 'ofertas laborales' reported by 
 
 Finally, the names and codes of departments and municipalities are obtained from the 'Datos Abiertos' page of the Ministry of ICTs [https://www.datos.gov.co/Mapas-Nacionales/Departamentos-y-municipios-de-Colombia/xdk5-pm3f/about_data].
 
+# Folder setting
+
+To process the raw data, you must ensure to properly organize them into folders. First, the GEIH files should be placed in a folder named 'Raw_data' per year; there, they should be uncompressed and ensure that all filenames maintain the same structure year after year. In the files used for this code, each month's folder starts with the month number followed by a period, for example: '1.Enero'. In the files for each month (except for 2020, which are already stacked), ensure that each of the 'Cabecera' and 'Resto' files always contain these words, to ensure proper aggregation. An example for the January 2015 folder would be 'Data\Raw_data\2015\1.Enero'.
+
+On the other hand, data from 2015-2019 should be matched with sector information using revision 4 of the CIIU. For this, the files with CIIU information for each year downloaded from DANE should be uncompressed and placed in the folder for each year, i.e., for the year 2015, it would be in the folder 'Data\Raw_data\2015'.
+
+Regarding the MESEP data, these are annualized and should only be uncompressed into a folder named MESEP, with subfolders for each year; the 'Personas' and 'Hogares' files should go in the same folder. Ensure that the filenames of these two files do not change each year. An example for the January 2015 folder would be 'Data\Raw_data\MESEP\2015'.
+
+Once all uncompressed files are in folders, run the do-file: 1_run_dofiles.do, which runs all the codes to obtain the results of the article.
+
 # Do-files description
 We used nine codes to obtain the results of the paper:
 
-- 0_run_dofiles: this is the master code that runs all do-files to generate the panel, descriptive plots, and estimates in both tables and graphs.
-- 1_create_annual_files: transforms the raw files downloaded from DANE into annualized files for panel construction.
-- 2_create_panel_all_rawdata: This do-file builds the panel by appending the annual data and matching the MESEP data.
+- 1_run_dofiles: this is the master code that runs all do-files to generate the panel, descriptive plots, and estimates in both tables and graphs.
+- 2_create_annual_files: transforms the raw files downloaded from DANE into annualized files for panel construction. Also, this builds the  repeated cross-sectional panel by appending the annual data and matching the MESEP data.
 - 3_cod_general_variables_WB: this is a code to create standard variables used by the World Bank team for employment issues in Colombia.
 - 4_key_variables: constructs key variables for estimation and descriptive exercises.
 - 5_graphs_1_20: Generates descriptive graphs 1 to 20 of the paper.
