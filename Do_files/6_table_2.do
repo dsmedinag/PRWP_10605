@@ -109,7 +109,8 @@ label val act_eco act_eco_ing
 replace area=11 if area==25
 replace area=99 if area==.
 
-drop area2 mes1 mes2
+capture drop area2 mes1 mes2
+
 foreach x of varlist area grupo_educacional rela_labor exp_cat g_etarios work_status act_eco niños_0_3 niños_3_6 niños_6_12 rural estado_civil tiempo_parcial {
 tab `x', gen(`x')
 }
