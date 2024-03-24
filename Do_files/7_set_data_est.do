@@ -6,7 +6,7 @@
 * Making variables and labeling
 use "${data}/GEIH_2015_2021_est.dta", clear
 
-drop area2 mes1 mes2
+capture drop area2 mes1 mes2
 keep if edad>=18 & edad<60
 
 label var edad "Age"
