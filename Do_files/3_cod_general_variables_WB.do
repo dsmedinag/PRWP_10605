@@ -347,10 +347,13 @@ use "${data}\GEIH_2015_2021", clear
 				label define tp_contrato 1 "Verbal" 2 "Escrito"
 				label values tp_contrato tp_contrato
 			
-			******* Generar la variable de actividad economica - Documentos DANE Rev 4 *****************
+			******* Generar la variable de actividad economica
 			
+			* Documentos DANE Rev 4
 			destring rama2d_r4, replace
-		
+			destring RAMA2D_R4, replace
+			replace rama2d_r4=RAMA2D_R4 if año<2020
+	
 			gen act_eco_r4 = .
 			
 			replace act_eco_r4 = 0 if rama2d_r4 == 0
@@ -379,51 +382,6 @@ use "${data}\GEIH_2015_2021", clear
 			replace act_eco_r4 = . if rama2d_r4 == .
 			
 			lab var act_eco_r4 "Actividad economica Rev. 4" 
-			
-			label define act_eco_r4 0 "No informa" 1 "SECCIÓN A - Agricultura, Ganadería, Caza, Silvicultura Y Pesca" ///
-			2 "SECCIÓN B - Explotación De Minas Y Canteras" 3 "SECCIÓN C - Industrias Manufactureras" ///
-			4 "SECCIÓN D - Suministro De Electricidad, Gas, Vapor Y Aire Acondicionado" ///
-			5 "SECCIÓN E - Distribución De Agua; Evacuación Y Tratamiento De Aguas Residuales, Gestión De Desechos Y Actividades De Saneamiento Ambiental" ///
-			6 "SECCIÓN F - Construcción" 7 "SECCIÓN G - Comercio Al Por Mayor Y Al Por Menor; Reparación De Vehículos Automotores Y Motocicletas" ///
-			8 "SECCIÓN H - Transporte Y Almacenamiento" 9 "SECCIÓN I - Alojamiento Y Servicios De Comida" ///
-			10 "SECCIÓN J - Información Y Comunicaciones" 11 "SECCIÓN K - Actividades Financieras Y De Seguros" ///
-			12 "SECCIÓN L - Actividades Inmobiliarias" 13 "SECCIÓN M - Actividades Profesionales, Científicas Y Técnicas" ///
-			14 "SECCIÓN N - Actividades De Servicios Administrativos Y De Apoyo" ///
-			15 "SECCIÓN O - Administración Pública Y Defensa; Planes De Seguridad Social De Afiliación Obligatoria" ///
-			16 "SECCIÓN P - Educación" 17 "SECCIÓN Q - Actividades De Atención De La Salud Humana Y De Asistencia Social" ///
-			18 "SECCIÓN R  - Actividades Artísticas, De Entretenimiento Y Recreación" 19 "SECCIÓN S - Otras Actividades De Servicios" ///
-			20 "SECCIÓN T  - Actividades De Los Hogares Individuales En Calidad De Empleadores; Actividades No Diferenciadas De Los Hogares Individuales Como Productores De Bienes Y Servicios Para Uso Propio" ///
-			21 "SECCIÓN U - Actividades De Organizaciones Y Entidades Extraterritoriales "
-			label values act_eco_r4 act_eco_r4
-			
-			
-			*- Agrupacion de actividades DANE
-			
-			gen act_eco_r4_DANE = .
-			
-			replace act_eco_r4_DANE = 0 if act_eco_r4 == 0
-			replace act_eco_r4_DANE = 1 if act_eco_r4 == 1
-			replace act_eco_r4_DANE = 2 if act_eco_r4 == 2
-			replace act_eco_r4_DANE = 3 if act_eco_r4 == 3
-			replace act_eco_r4_DANE = 4 if act_eco_r4 == 4 | act_eco_r4 == 5
-			
-			replace act_eco_r4_DANE = 5 if act_eco_r4 == 6
-			replace act_eco_r4_DANE = 6 if act_eco_r4 == 7
-			replace act_eco_r4_DANE = 7 if act_eco_r4 == 9
-			replace act_eco_r4_DANE = 8 if act_eco_r4 == 8
-			replace act_eco_r4_DANE = 9 if act_eco_r4 == 10
-			replace act_eco_r4_DANE = 10 if act_eco_r4 == 11
-			replace act_eco_r4_DANE = 11 if act_eco_r4 == 12
-			replace act_eco_r4_DANE = 12 if act_eco_r4 == 13 | act_eco_r4 == 14
-			replace act_eco_r4_DANE = 13 if act_eco_r4 == 15 | act_eco_r4 == 16 | act_eco_r4 == 17
-			replace act_eco_r4_DANE = 14 if act_eco_r4 == 18 | act_eco_r4 == 19 | act_eco_r4 == 20 | act_eco_r4 == 21
-			
-			lab var act_eco_r4_DANE "Actividad economica Rev. 4 Clasf. DANE"
-			
-			label define act_eco_r4_DANE 0 "AE_1" 1 "AE_2" 2 "AE_3" 3 "AE_4" 4 "AE_5" 5 "AE_6" 6 "AE_7" 7 "AE_8" 8 "AE_9" 9 "AE_10" 10  "AE_11" 11 "AE_12" 12 "AE_13" 13 "AE_14" 14 "AE_15"
-
-			label values act_eco_r4_DANE act_eco_r4_DANE
-			
 				
 	*- Definicion de Informalidad DANE -*
 
