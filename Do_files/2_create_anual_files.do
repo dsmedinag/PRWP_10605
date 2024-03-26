@@ -272,6 +272,13 @@ replace año=`i' if año==.
 
 merge 1:1 directorio secuencia_p año mes orden using "${data}/GEIH_2015_2021_MESEP", keep(1 3) generate(merge_mesep)
 
+destring RAMA2D_R4 RAMA4D_R4, replace
+replace rama2d_r4=RAMA2D_R4 if año<2020
+replace rama4d_r4=RAMA4D_R4 if año<2020
+replace rama2d_d_r4=RAMA2D_D_R4 if año<2020
+replace rama4d_d_r4=RAMA4D_D_R4 if año<2020
+
+drop RAMA4D_R4 RAMA2D_R4 RAMA4D_D_R4 RAMA2D_D_R4
 compress
 
 replace area=. if area>76 & area<99
