@@ -350,10 +350,6 @@ use "${data}\GEIH_2015_2021", clear
 			******* Generar la variable de actividad economica
 			
 			* Documentos DANE Rev 4
-			destring rama2d_r4, replace
-			destring RAMA2D_R4, replace
-			replace rama2d_r4=RAMA2D_R4 if año<2020
-	
 			gen act_eco_r4 = .
 			
 			replace act_eco_r4 = 0 if rama2d_r4 == 0
