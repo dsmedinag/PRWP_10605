@@ -44,6 +44,14 @@ We used nine codes to obtain the results of the paper:
 - 8_tables_3_5: Generates the estimates of the decomposition methods used and exports data to tables 3-5 and figures 33-34. These are then organized in Excel.
 - 9_graphs_21_32: Generates the estimates of the probabilistic model and generates result graphs 21-32.
 
+# Steps to Create figures 33-34 and tables 3-5
+
+- Each of the values in Figures 33 and 34 come from the coefficients generated in the 'Table_results' table, in the 'OB_heckman_hourly' and 'OB_heckman_monthly' sheets, respectively. Specifically, from the 'difference' coefficient we obtain the 'Estimated gap', from the 'endowments' coefficient we obtain the 'Explained' part, and from the 'coefficients' coefficient we obtain the 'Unexplained' part. To obtain the percentage difference they are transformed by subtracting 1 from each of them and multiplying by 100.
+
+- Each of the values in Tables 3 and 5 come from the coefficients generated in the 'Table_results' table, in the 'OB_heckman_hourly' and 'OB_heckman_monthly' sheets, respectively. Only the coefficients of the 'endowments' section of the table are taken because we are linking the coefficients related to the gap explained by individuals' endowments. To obtain the percentage difference they are transformed by subtracting 1 from each of them and multiplying by 100. For the area and sector coefficients, the percentages obtained from the table are summed to reduce the size of the table. In this way, the total explained presented in the table corresponds to the sum of the percentages explained by each variable. 
+
+- The total and the unexplained total (bottom lines) are those of the "overall" section, ‘difference’ and ‘coefficients’, respectively, using the same transformation. There is a difference between the result of the explained gap and that obtained by the sum, we kept the second one because the interest of this table is to disaggregate the explained part.
+
 # Disclaimer
 
 We can not guarantee that the results are 100% reproducible. We have high confidence in the replicability of 2015-2019 and 2021. However, 2020 was a complex year in terms of data collection, which led to constant changes in the information reported. In addition, through 2022, DANE changed the framework of the survey expansion factors, which also generated constant changes in data reporting.
